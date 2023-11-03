@@ -9,11 +9,13 @@ using BookStoreApp.API.Data;
 using BookStoreApp.API.Models.Author;
 using AutoMapper;
 using BookStoreApp.API.Satatic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookStoreApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AuthorsController : ControllerBase
     {
         private readonly BookStoreDbContext _context;
