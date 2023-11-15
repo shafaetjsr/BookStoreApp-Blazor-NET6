@@ -62,7 +62,7 @@
         }
         catch (ApiException ex)
         {
-            if (ex.StatusCode >= 200 && ex.StatusCode <=200)
+            if (ex.StatusCode >= 200 && ex.StatusCode <=299)
             {
                 navManager.NavigateTo("/user/login");
             }
